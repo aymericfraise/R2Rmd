@@ -1,5 +1,5 @@
 # R2Rmd
-**Converts R to R Markdown**
+**Converts from R to R Markdown**
 
 ## R2Rmd.sh
 
