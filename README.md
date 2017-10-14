@@ -1,9 +1,18 @@
 # R2Rmd
 **Converts R to R Markdown**
 
+## R2Rmd.sh
+
+Converts
+
+## R2Rmd.py
+
+Converts a .R file into a .Rmd file
+
 ```sh
-$ python R2Rmd.py [input_path] [output_path]
+$ python R2Rmd.py [input_path] [optionnal: output_path]
 ```
+
 Converts this :
 
 ```r
