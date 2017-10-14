@@ -11,4 +11,4 @@ python R2Rmd.py $file "${filename}.Rmd"
 
 /usr/bin/Rscript -e "library(rmarkdown); render(\"${filename}.Rmd\", output_format = 'html_document')"
 
-rm ${filename}.Rmd
+rm "${filename}.Rmd"
