@@ -9,6 +9,7 @@ Takes a .R file and outputs an HTML render of its R Markdown equivalent.
 $ ./R2Rmd.sh [input_path]
 ```
 
+Requires the *rmarkdown* R library to be installed
 
 ## R2Rmd.py
 
