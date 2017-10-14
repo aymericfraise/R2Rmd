@@ -3,7 +3,12 @@
 
 ## R2Rmd.sh
 
-Converts
+Takes a .R file and outputs an HTML render of its R Markdown equivalent.
+
+```sh
+$ ./R2Rmd.sh [input_path]
+```
+
 
 ## R2Rmd.py
 
