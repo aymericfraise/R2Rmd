@@ -3,23 +3,18 @@ import re
 
 # Handle arguments
 
-if not 1 <= len(sys.argv)-1 <= 2:
+if len(sys.argv) != 1:
     print('Error:')
-    print('This takes 1 or 2 arguments, {} given'.format(len(sys.argv)-1))
-    print('Usage : R2Rmd.py [input_path] [optionnal: output_path]');
+    print('Expecting exactly 1 argument, got {}'.format(len(sys.argv)-1))
+    print('Usage : R2Rmd.py [input_path]');
     sys.exit()
 
-input_path = sys.argv[1]
-if len(sys.argv)-1 == 1:  # if only the input file has been specified
-    # check whether there is or not a .R extension
-    reg = re.findall('(.+?).R\Z',input_path)
-    if reg:
-        output_path = reg[0] + '.Rmd'
-    else:
-        output_path = input_path + '.Rmd'
+# check whether there is or not a .R extension
+reg = re.findall('(.+?).R\Z',input_path)
+if reg:
+    output_path = reg[0] + '.Rmd'
 else:
-    input_path = sys.argv[1]
-    output_path = sys.argv[2]
+    output_path = input_path + '.Rmd'
 
 
 # Put all the contents of the file into a string that can be regexed
